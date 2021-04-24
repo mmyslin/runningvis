@@ -17,7 +17,7 @@ for (unit in units){
   }
   beginning = beginning[-2]
   u = unit
-  colors = if(u==7005|u==7007|u==7001|u==7002) {rgb(49, 79, 70, max = 255, alpha = 255*(unitMileages/14))} else rgb(60,179,113, max = 255, alpha = 255*(unitMileages/14))
+  colors = if(u==7005|u==7007|u==7001|u==7002|u==7013) {rgb(49, 79, 70, max = 255, alpha = 255*(unitMileages/14))} else rgb(60,179,113, max = 255, alpha = 255*(unitMileages/14))
   
   rect(beginning, yOffset-0.5, end, yOffset+0.5, col=colors, border="white")
   text(-15, u-7000, u)
